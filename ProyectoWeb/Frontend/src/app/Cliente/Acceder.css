@@ -1,0 +1,46 @@
+body{
+    background-color: blue;
+
+  
+}
+div{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 34px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 8%;
+
+}
+label{
+    margin-left: 20px;
+    display: block;
+    color: #333;
+    font-family: Arial, sans-serif;
+    
+}
+a{
+    margin-left: 20px;
+    display: block;
+    color: rgb(29, 29, 172);
+    text-decoration: none;
+}
+input{
+    width: 80%;
+    padding: 5px;
+    margin-left: 20px;
+}
+#correo{
+    margin-bottom: 15px;
+}
+input[type="submit"]{
+    margin: 25px;
+    background-color: rgb(47, 128, 235);
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+img{
+    margin-left: 23%;
+}
+  
