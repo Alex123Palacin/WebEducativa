@@ -1,4 +1,25 @@
 header{
     box-shadow: 0 0 5px;
-    
+    width: 100%; /* Asegura que el header ocupe el 100% del ancho de la ventana */
+    height: 80px;
+    margin: 0; /* Elimina cualquier margen por defecto */
+    padding: 20px; /* Puedes ajustar el padding según prefieras */
+    background-color: #94e9d4; /* Cambia el color de fondo si es necesario */
+
+}
+.susc{
+    /* Estilos que deseas aplicar */
+    background-color: #b4d5e7; /* Color de fondo */
+    border: 1px solid #555454; /* Bordes */
+    padding: 100px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: flexbox;
+}
+.tarjetitas {
+    display: flex;
+    justify-content: space-around;
+}
+body, html {
+    margin: 0; /* Elimina márgenes predeterminados del body y html */
+    padding: 0;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Recuperar Contraseña</title> 
+    <link rel="stylesheet" href="RecuperarContraseña.css"> 
+</head>
+<body>
+    <!-- Contenedor principal que centra el contenido en la pantalla -->
+    <div class="contenedor"> 
+        <!-- Caja que contiene el formulario -->
+        <div class="caja"> 
+            
+            <h2>Recuperar Contraseña</h2> 
+            <img src="/Frontend/img/bot.jpeg" alt="">
+            
+            <form action=""> 
+                <label for="recuperar-opciones">Seleccione una opción de recuperación:</label>
+               <!-- Este es el menú de las opciones, el cual se podra elegir dos -->
+                <select id="recuperar-opciones" onchange="opcionesDeRecuperación()"> 
+                    <option value="email">Correo Electrónico</option> <!-- Opción de recuperar por correo -->
+                    <option value="numero">Número de Celular</option> <!-- Opción de recuperar por celular -->
+                </select>
+                <!-- Sección para poder ingresar el correo electrónico -->
+                <div id="email-opcion"> 
+                    <!-- Campo para introducir el correo, se usa "required" para marcar que es obligatorio -->
+                    <input type="email" id="email" placeholder="Ingrese su correo" required> 
+                </div>
+                <!-- Sección para poder ingresar el número de celular -->
+                <div id="numero-opcion" style="display: none;"> 
+                <!-- Campo para introducir un número maximo de 9 dígitos -->
+                    <input type="tel" id="num" placeholder="Ingrese su número de celular" pattern="[0-9]{9}"> 
+                </div>
+                
+                <input type="submit" value="Enviar código"> 
+            </form>
+            
+            <a href="Acceder.html" class="regresar">Volver a Iniciar Sesión</a> 
+        </div>
+    </div>
+
+    <script src="RecuperarContraseña.js"></script> 
+</body>
+</html>
