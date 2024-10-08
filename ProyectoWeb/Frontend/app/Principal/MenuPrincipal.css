@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background: linear-gradient(to bottom, #03045e, #20b3d8); /* Degradado de fondo */
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral {
+    width: 250px;
+    height: calc(100vh - 60px); /* Calcula la altura del menú lateral restando la altura del header */
+    position: fixed;
+    top: 60px; /* Comienza justo debajo del header */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: linear-gradient(to bottom, #03045e, #20b3d8); 
+}
+
+
+
+.menu-lateral div {
+    background: transparent;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+    color: rgb(29, 204, 6);
+}
+main {
+    flex: 1; /* Permite que el main ocupe todo el espacio restante */
+    margin-top: 60px; /* Ajusta este valor según la altura del header para evitar que se superponga */
+    display: flex;
+    background: linear-gradient(to bottom, #03045e, #20b3d8); /* Degradado del main */
+}

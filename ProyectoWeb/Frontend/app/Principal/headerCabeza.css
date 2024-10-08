@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#03045e;
+    padding: 10px 20px;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+
+.logo h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.barra-busqueda input {
+    padding: 10px;
+    font-size: 16px;
+    width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.opciones-usuario {
+    display: flex;
+    gap: 20px;
+    color: rgb(29, 204, 6);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.opciones-usuario .carrito,
+.opciones-usuario .configuraciones {
+    cursor: pointer;
+}
+/*Para q se ajuste a celular*/
+@media screen and (max-width: 768px) {
+    .barra-busqueda input {
+        width: 200px;
+    }
+}
