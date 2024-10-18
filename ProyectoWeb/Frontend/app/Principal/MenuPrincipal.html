@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>menu</title>
     <link rel="stylesheet" href="headerCabeza.css">
     <link rel="stylesheet" href="MenuPrincipal.css">
+    <link rel="stylesheet" href="plantillaCursos/plantilla_curso.css">
 </head>
 <body>
     <header class="encabezado">
@@ -16,52 +17,43 @@
             <input type="text" placeholder="Buscar...">
         </div>
         <div class="opciones-usuario">
-            <div class="carrito">Carrito</div>
-            <div class="configuraciones">Configuraciones</div>
+            <div class="carrito"><img src="/ProyectoWeb/Frontend/img/iconos/icono_compras.png" alt=""></div>
+            <div class="configuraciones">
+                <img src="/ProyectoWeb/Frontend/img/iconos/icno_usuario.png" alt="" style="height: 24px; width: 24px;">
+            </div>
         </div>
     </header>
 
     <main>
         <div class="menu-lateral">
+
             <div>
-                <h1>Inicio</h1>
+                <a href="aprendisajes/MiAprendisaje.html" class="opciones">Mi aprendisaje</a>
             </div>
             <div>
-                <h1>Mi aprendizaje</h1>
+                <a href="favoritos/Favoritos.html" class="opciones">Favoritos</a>
             </div>
             <div>
-                <h1>Favoritos</h1>
+                <a href="becas/Beca.html" class="opciones">Beca</a>
             </div>
             <div>
-                <h1>Beca</h1>
+                <a href="planes/planes.html" class="opciones">Planes</a>
             </div>
             <div>
-                <h1>Planes</h1>
+                <a href="" class="opciones">Cursos Comprados</a>
             </div>
             <div>
-                <h1>Cursos Comprados</h1>
-            </div>
-            <div>
-                <h1>Certificados</h1>
-            </div>
-            <div>
-                <h1>Guias</h1>
-            </div>
-            <div>
-                <h1>Clases</h1>
-            </div>
+
         </div>
+  
     </main>
-
-    <aside>
-
-
-    </aside>
+    
+    <div id="contenido-aside"> </div>
 
 
 
 
 
-
+    <script src="/ProyectoWeb/Frontend/app/Principal/plantillaCursos/mostrar_cursos1.js"></script>
 </body>
 </html>

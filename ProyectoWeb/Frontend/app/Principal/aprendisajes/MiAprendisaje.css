@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    border: 2px solid red;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 1.2em;
+    color: red;
+}
+
+.boton-desplegar {
+    font-size: 1.5em;
+    color: red;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s;
+}
+
+.boton-desplegar:hover {
+    transform: rotate(180deg);
+}
+
+.cursos {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.cursos.mostrar {
+    display: block;
+}

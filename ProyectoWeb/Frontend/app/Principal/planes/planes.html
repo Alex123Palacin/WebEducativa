@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para diseño responsivo -->
+    <title >Planes de Suscripción</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS para dar estilo a la página -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet"> <!-- Enlaza la fuente Montserrat desde Google Fonts -->
+</head>
+<body>
+    <section class="precio-section"> <!-- Sección principal que contiene los planes -->
+        <h1>Planes</h1> <!-- Título de la sección -->
+        <p>¡Suscríbete hoy y desbloquea lo mejor que tenemos para ofrecer!</p> <!-- Descripción general -->
+        
+        <div class="botones"> <!-- Contenedor para los botones de selección de tipo de plan -->
+            <button id="personalBtn" class="active">Personal</button> <!-- Botón para el plan Personal -->
+            <button id="duoBtn">Duo</button> <!-- Botón para el plan Duo -->
+            <button id="teamBtn">Team</button> <!-- Botón para el plan Team -->
+        </div>
+        
+        <div class="precio-container"> <!-- Contenedor para los planes de precios -->
+
+            <!-- Plan Mensual Personal -->
+            <div class="plan personal-plan"> <!-- Div para el plan personal mensual -->
+                <h2>S/. 50</h2> <!-- Precio del plan -->
+                <h3>Mensual</h3> <!-- Duración del plan -->
+                <p>Perfecto para quienes están empezando en el mundo de la programación. Accede a nuestros cursos y construye una sólida base de conocimientos.</p> <!-- Descripción del plan -->
+                <button>Empezar</button> <!-- Botón para iniciar -->
+                <ul> <!-- Lista de beneficios del plan -->
+                    <li>Acceso a cursos básicos de programación.</li>
+                    <li>Proyectos prácticos para aplicar lo aprendido.</li>
+                    <li>Certificado de finalización al completar los cursos.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Semestral Personal -->
+            <div class="plan personal-plan"> <!-- Div para el plan personal semestral -->
+                <h2>S/. 250</h2>
+                <h3>Semestral</h3>
+                <p>Este plan te permite profundizar tus conocimientos en programación a un nivel intermedio. Avanza a tu propio ritmo con contenidos más desafiantes.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a cursos de programación.</li>
+                    <li>Proyectos y desafíos prácticos para consolidar tus habilidades.</li>
+                    <li>Certificado de finalización que refleja las habilidades adquiridas.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Anual Personal -->
+            <div class="plan personal-plan"> <!-- Div para el plan personal anual -->
+                <h2>S/. 450</h2>
+                <h3>Anual</h3>
+                <p>La opción más completa para quienes quieren alcanzar un nivel avanzado en programación. Accede a todos los cursos y mejora tus habilidades durante un año.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a todos los cursos.</li>
+                    <li>Participación en nuestra comunidad de aprendizaje con recursos y eventos exclusivos.</li>
+                    <li>Certificado de finalización con portafolio de proyectos avanzados.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Mensual Duo -->
+            <div class="plan duo-plan" style="display: none;"> <!-- Div para el plan Duo mensual, inicialmente oculto -->
+                <h2>S/. 90</h2>
+                <h3>Mensual</h3>
+                <p>Ideal para dos personas que desean aprender juntas. Accede a nuestros cursos y mejora sus habilidades como equipo.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a cursos de programación para 2 usuarios.</li>
+                    <li>Proyectos prácticos para aplicar lo aprendido.</li>
+                    <li>Certificado de finalización para cada usuario al completar los cursos.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Semestral Duo -->
+            <div class="plan duo-plan" style="display: none;"> <!-- Div para el plan Duo semestral, inicialmente oculto -->
+                <h2>S/. 450</h2>
+                <h3>Semestral</h3>
+                <p>Profundiza en tus conocimientos en programación junto a un amigo o compañero. Accede a nuestros cursos y mejoren juntos.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a cursos de programación para 2 usuarios.</li>
+                    <li>Proyectos y desafíos prácticos para consolidar habilidades.</li>
+                    <li>Certificado de finalización para cada usuario al completar los cursos.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Anual Duo -->
+            <div class="plan duo-plan" style="display: none;"> <!-- Div para el plan Duo anual, inicialmente oculto -->
+                <h2>S/. 810</h2>
+                <h3>Anual</h3>
+                <p>La opción más completa para dos personas que quieren alcanzar un nivel avanzado en programación. Accede a todos los cursos y mejoren sus habilidades durante un año.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a todos los cursos para 2 usuarios.</li>
+                    <li>Participación en nuestra comunidad de aprendizaje con recursos y eventos exclusivos.</li>
+                    <li>Certificado de finalización para cada usuario con portafolio de proyectos avanzados.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Mensual Team -->
+            <div class="plan team-plan" style="display: none;"> <!-- Div para el plan Team mensual, inicialmente oculto -->
+                <h2>S/. 180</h2>
+                <h3>Mensual</h3>
+                <p>Ideal para equipos de cuatro personas que desean aprender juntos. Accede a nuestros cursos y mejora sus habilidades como grupo.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a cursos de programación para 4 usuarios.</li>
+                    <li>Proyectos prácticos para aplicar lo aprendido.</li>
+                    <li>Certificado de finalización para cada usuario al completar los cursos.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Semestral Team -->
+            <div class="plan team-plan" style="display: none;"> <!-- Div para el plan Team semestral, inicialmente oculto -->
+                <h2>S/. 1080</h2>
+                <h3>Semestral</h3>
+                <p>Este plan permite que equipos de cuatro usuarios profundicen en sus conocimientos. Avancen juntos en programación.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a cursos de programación para 4 usuarios.</li>
+                    <li>Proyectos y desafíos prácticos para afianzar habilidades.</li>
+                    <li>Certificado de finalización para cada usuario al completar los cursos.</li>
+                </ul>
+            </div>
+
+            <!-- Plan Anual Team -->
+            <div class="plan team-plan" style="display: none;"> <!-- Div para el plan Team anual, inicialmente oculto -->
+                <h2>S/. 2160</h2>
+                <h3>Anual</h3>
+                <p>La opción más completa para equipos de cuatro personas que quieren alcanzar un nivel avanzado en programación. Accede a todos los cursos y mejora tus habilidades durante un año.</p>
+                <button>Empezar</button>
+                <ul>
+                    <li>Acceso a todos los cursos para 4 usuarios.</li>
+                    <li>Participación en nuestra comunidad de aprendizaje con recursos y eventos exclusivos.</li>
+                    <li>Certificado de finalización para cada usuario con portafolio de proyectos avanzados.</li>
+                </ul>
+            </div>
+
+        </div> <!-- Cierre de precio-container -->
+    </section> <!-- Cierre de precio-section -->
+    
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript para agregar interactividad -->
+</body>
+</html>

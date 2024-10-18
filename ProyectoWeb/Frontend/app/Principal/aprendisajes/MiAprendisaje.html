@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi aprendisaje</title>
+    <link rel="stylesheet" href="/ProyectoWeb/Frontend/app/Principal/headerCabeza.css">
+    <link rel="stylesheet" href="MiAprendisaje.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="opciones-usuario">
+            <div class="carrito"><img src="/ProyectoWeb/Frontend/img/icono_compras.png" alt=""></div>
+            <div class="configuraciones">
+                <img src="/ProyectoWeb/Frontend/img/iconos/icno_usuario.png" alt="" style="height: 24px; width: 24px;">
+            </div>
+        </div>
+    </header> 
+
+    <div class="contenedor">
+        <div class="cabecera">
+            <span class="titulo">Cursos</span>
+            <span class="boton-desplegar" onclick="alternarCursos()">▼</span>
+        </div>
+        <div class="cursos" id="cursos">
+            <!-- Aquí se agregarán los cursos más adelante -->
+        </div>
+    </div>
+
+    <script src="MiAprendisaje.js"></script>
+
+</body>
+</html>

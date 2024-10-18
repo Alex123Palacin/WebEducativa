@@ -1,0 +1,74 @@
+
+body{
+    background: linear-gradient(to bottom, #03045e,#20b3d8);
+    height: 100vh; 
+    margin: 0; 
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font-weight: 100; 
+    font-size: 50px; 
+    letter-spacing: 5px; /* Espaciado entre letras */
+}
+
+.titulo span {
+    font-weight: 1000; /* Para el cambio de peso en "CODE" */
+}
+
+.slash {
+    font-weight: 400; /* Peso más grueso para la barra */
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(87, 128, 216);
+}
+
+.button {
+    background-color: #142a41; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    margin-left: 20px; /* Espacio a la izquierda */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Sube ligeramente el botón */
+}
+
+.button:active {
+    transform: translateY(0); /* Restablecer al hacer clic */
+}

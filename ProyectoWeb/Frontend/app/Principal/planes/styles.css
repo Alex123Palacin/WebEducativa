@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #03045e,#20b3d8);
+    height: 100vh; 
+    margin: 0; 
+
+
+}
+
+.precio-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.precio-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.precio-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.precio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
+    width: 300px;
+    position: relative;
+}
+
+.plan h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.plan p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #4d4d4d;
+    display: flex;
+    align-items: center;
+}
+
+.plan ul li:before {
+    content: "✔";
+    color: #000000;
+    margin-right: 10px;
+}
+
+.botones {
+    margin-bottom: 20px;
+}
+
+.botones button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.botones button.active {
+    background-color: #000;
+    color: white;
+}

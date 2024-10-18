@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="Carrito.css">
+    <link rel="stylesheet" href="/ProyectoWeb/Frontend/app/">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="opciones-usuario">
+            <div class="carrito"><img src="/ProyectoWeb/Frontend/img/icono_compras.png" alt=""></div>
+            <div class="configuraciones">
+                <img src="/ProyectoWeb/Frontend/img/icno_usuario.png" alt="" style="height: 24px; width: 24px;">
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-carrito">
+        <h1>Selecciona tus Cursos</h1>
+        <div class="seleccion-cursos">
+            <!-- Lista de cursos -->
+            <label><input type="radio" name="curso" value="50" onclick="actualizarPrecio()"> Curso de Programación - $50</label><br>
+            <label><input type="radio" name="curso" value="30" onclick="actualizarPrecio()"> Curso de c++ - $30</label><br>
+            <label><input type="radio" name="curso" value="40" onclick="actualizarPrecio()"> Curso de html - $40</label><br>
+            <label><input type="radio" name="curso" value="60" onclick="actualizarPrecio()"> Curso de java - $60</label><br>
+            <label><input type="radio" name="curso" value="45" onclick="actualizarPrecio()"> Curso de python - $45</label><br>
+        </div>
+        
+        <div class="precio-total">
+            <h2>Total: $<span id="precio">0</span></h2>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+
+    <script src="Carrito.js"></script>   
+</body>
+</html>

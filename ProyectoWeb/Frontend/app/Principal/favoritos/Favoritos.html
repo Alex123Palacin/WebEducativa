@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favoritos</title>
+    <link rel="stylesheet" href="/ProyectoWeb/Frontend/app/Principal/headerCabeza.css">
+    <link rel="stylesheet" href="Favoritos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="opciones-usuario">
+            <div class="carrito"><img src="/ProyectoWeb/Frontend/img/icono_compras.png" alt=""></div>
+            <div class="configuraciones">
+                <img src="/ProyectoWeb/Frontend/img/icno_usuario.png" alt="" style="height: 24px; width: 24px;">
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="pestaña" onclick="alternarSeccion('favoritos')">
+            <span>Cursos Favoritos</span>
+            <span class="icono">▼</span>
+        </div>
+        <div class="contenido" id="favoritos">
+            <ul>
+                <li>Curso 1</li>
+                <li>Curso 2</li>
+                <li>Curso 3</li>
+                <!-- Agrega más cursos favoritos aquí -->
+            </ul>
+        </div>
+
+        <div class="pestaña" onclick="alternarSeccion('comprados')">
+            <span>Cursos Comprados</span>
+            <span class="icono">▼</span>
+        </div>
+        <div class="contenido" id="comprados">
+            <ul>
+                <li>Curso A</li>
+                <li>Curso B</li>
+                <li>Curso C</li>
+                <!-- Agrega más cursos comprados aquí -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="Favoritos.js"></script>
+    
+    
+
+</body>
+</html>

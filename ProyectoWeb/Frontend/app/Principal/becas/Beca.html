@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beca</title>
+    <link rel="stylesheet" href="headerCabeza.css">
+    <link rel="stylesheet" href="Beca.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="opciones-usuario">
+            <div class="carrito"><img src="/ProyectoWeb/Frontend/img/icono_compras.png" alt=""></div>
+            <div class="configuraciones">
+                <img src="/ProyectoWeb/Frontend/img/icno_usuario.png" alt="" style="height: 24px; width: 24px;">
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <h1>Solicita tu Beca</h1>
+        <p>Para solicitar una beca, completa el curso al 100% y solicita el examen. Si apruebas, podrás solicitar la beca con la nota obtenida.</p>
+
+        <div class="progreso">
+            <label for="progreso-curso">Progreso del Curso:</label>
+            <progress id="progreso-curso" value="0" max="100"></progress>
+            <button onclick="completarCurso()">Completar Curso</button>
+        </div>
+
+        <div class="examen" id="examen" style="display: none;">
+            <button onclick="solicitarExamen()">Solicitar Examen</button>
+        </div>
+
+        <div class="resultado" id="resultado" style="display: none;">
+            <p>Nota del examen: <span id="nota"></span></p>
+            <button id="solicitar-beca" onclick="solicitarBeca()" style="display: none;">Solicitar Beca</button>
+        </div>
+    </div>
+
+    <script src="Beca.js"></script>
+</body>
+</html>

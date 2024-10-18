@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pestaña {
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.pestaña:hover {
+    background-color: #d0d0d0;
+}
+
+.icono {
+    transition: transform 0.3s;
+}
+
+.contenido {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.contenido ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contenido li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.contenido li:last-child {
+    border-bottom: none;
+}
+
+/* Clase para mostrar contenido */
+.mostrar {
+    display: block;
+}
+
+.mostrar .icono {
+    transform: rotate(180deg);
+}

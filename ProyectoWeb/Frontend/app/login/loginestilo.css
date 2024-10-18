@@ -1,0 +1,268 @@
+/* Reseteo de márgenes, padding y tipografía */
+*{ 
+    /* Elimina los márgenes por defecto de todos los elementos */
+    margin: 0;
+    /* Elimina los espacios internos (padding) por defecto de todos los elementos */
+    padding: 0;
+    /* Asegura que los espacios internos y el borde no afecten el ancho/alto total de los elementos */
+    box-sizing: border-box; 
+    /* Quita subrayados u otros estilos de texto predeterminados, como en los enlaces */
+    text-decoration: none;
+    /* Usa la fuente 'Roboto' en todo el documento */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del cuerpo */
+body {
+    background: black;
+}
+
+/* Contenedor principal */
+main {
+    width: 100%; /* Ocupa todo el ancho disponible de la pantalla */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+    margin: auto; /* Centra el contenido horizontalmente */
+    margin-top: 100px; /* Añade un espacio superior de 100px para separar el contenido del borde superior */
+}
+
+/* Contenedor general del login/register */
+.contenedor__todo{
+    width: 100%; /*Ocupa todo el ancho disponible */
+    max-width: 800px; /*El ancho máximo es de 800px*/
+    margin: auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Permite ajustar la posición de elementos al contenedor*/
+}
+
+/* Caja trasera para opciones */
+.caja__trasera{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px 20px; /* Añade un espacio interno de 10px arriba/abajo y 20px a los lados */
+    display: flex; /* El flex para posiciona los elementos de manera flexible */
+    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
+    -webkit-backdrop-filter: blur(10px); /* Añade un desenfoque de fondo en Safari */
+    backdrop-filter: blur(10px); /* Añade un desenfoque de fondo en otros navegadores */
+    background-color: rgba(9, 55, 100, 0.5); /* Fondo azul semitransparente para la caja*/
+
+}
+
+/* Estilos internos de la caja */
+.caja__trasera div {
+    margin: 100px 40px; /* Añade un margen de 100px arriba/abajo y 40px a los lados para espaciar */
+    color: white; /* El texto dentro de estos divs será blanco */
+    transition: all 500ms; /*Cualquier cambio de estilo será suave y tomará 500ms */
+}
+
+/* Espaciado para párrafos y botones */
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px; /*Añade un margen superior de 30px */
+}
+
+/* Estilos para encabezados y párrafos */
+.caja__trasera div h3{
+    font-weight: 400; /* El grosor del texto es moderado */
+    font-size: 26px; /* Tamaño de letra de 26px */
+}
+
+.caja__trasera div p{
+    font-size: 16px; /* Tamaño de letra de 16px */
+    font-weight: 300; /* El texto es un poco más ligero */
+}
+
+/* Botones en la caja trasera */
+.caja__trasera button{
+    padding: 10px 40px; /* Añade un espacio interno de 10px arriba/abajo y 40px a los lados*/
+    border: 2px solid #fff; /* Añade un borde blanco de 2px */
+    font-size: 14px; /* Tamaño de letra de 14px */
+    background: transparent; /* El fondo del botón es transparente */
+    font-weight: 600; /* El texto es más grueso */
+    cursor: pointer; /* Al pasar el ratón por encima, se muestra el cursor de mano */
+    color: white; /* El color del texto es blanco */
+    outline: none; /* Elimina el borde al hacer clic */
+    transition: all 300ms; /* Transiciones suaves de 300ms cuando se interactúa con el botón */
+}
+
+.caja__trasera button:hover{
+    background: #fff; /* El fondo del botón se vuelve blanco al pasar el ratón */
+    color: #46A2FD; /* El texto se vuelve azul al pasar el ratón */
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 380px; /* Ancho máximo de 380px para evitar que sea muy grande */
+    position: relative; /* Permite ajustar la posición dentro del contenedor */
+    top: -185px; /* Desplaza el formulario hacia arriba */
+    left: 10px; /* Desplaza el formulario un poco hacia la izquierda */
+
+    /* Transición suave para mover el formulario */
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%; /* El formulario ocupa todo el ancho del contenedor */
+    padding: 80px 20px; /* Añade espacio interno para los campos del formulario */
+    background: white; /* El fondo del formulario es blanco */
+    position: absolute; /* Posiciona el formulario en relación a su contenedor padre */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px; /* Tamaño de letra grande de 30px */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+    color: #05284b; /* El color del texto es azul */
+}
+
+/* Estilos para los campos input dentro del formulario */
+.contenedor__login-register form input{
+    width: 100%; /* Los campos ocupan todo el ancho del formulario */
+    margin-top: 20px; /* Añade un margen superior de 20px */
+    padding: 10px; /* Añade un espacio interno de 10px */
+    border: none; /* Elimina los bordes */
+    background: #F2F2F2; /* El fondo del campo es gris claro */
+    font-size: 16px; /* Tamaño de letra de 16px */
+    outline: none; /* Elimina el borde al hacer clic */
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px; /* Añade un espacio interno de 10px arriba/abajo y 40px a los lados */
+    margin-top: 40px; /* Añade un margen superior de 40px */
+    border: none; /* Elimina los bordes */
+    font-size: 14px; /* Tamaño de letra de 14px */
+    background: #46A2FD; /* Fondo azul */
+    font-weight: 600; /* Texto más grueso */
+    cursor: pointer; /* El cursor cambia a mano al pasar el ratón */
+    color: white; /* El texto es blanco */
+    outline: none; /* Sin borde de enfoque al hacer clic */
+}
+
+/* Estilos para mostrar el formulario de login */
+.formulario__login{
+    opacity: 1; /* El formulario es visible */
+    display: block; /* El formulario se muestra */
+}
+
+/* Estilos para ocultar el formulario de registro */
+.formulario__register{
+    display: none; /* El formulario de registro no se muestra */
+}
+.formulario__register h2 {
+    text-align: center; /* Centra el título */
+}
+
+.formulario__register input {
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el checkbox y la etiqueta */
+    gap: 10px; /* Espacio entre el checkbox y la etiqueta */
+    margin-top: 5px; /* Espacio arriba del checkbox */
+}
+
+label[for="birthYear"] {
+    margin-top: 20px; /* Aumenta el espacio encima de la etiqueta "Año de nacimiento:" */
+    color: #7d7d7d; /* Color plomito */
+    font-family: 'Arial', sans-serif; /* Estilo de letra */
+    
+}
+
+button {
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px; /* Esta parte reduce el margen superior*/
+    }
+
+    .caja__trasera{
+        max-width: 350px; /*Reduce el ancho máximo para pantallas más pequeñas */
+        height: 300px; /* Fija la altura a 300px */
+        flex-direction: column; /* Cambia la disposición de los elementos a columna */
+        margin: auto; /* Centra la caja */
+    } 
+
+    .caja__trasera div{
+        margin: 0px; /* Elimina los márgenes */
+        position: absolute; 
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px; /* Ajusta la posición hacia arriba */
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative; 
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Importar fuente Poppins */
+
+.btn__volver {
+    display: inline-block; /* Para que se comporte como un botón */
+    padding: 10px 15px;
+    background-color: #a7b0b9; /* Color de fondo celeste */
+    color: 20B2AA; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border: 2px solid white; /* Contorno blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    position: absolute; /* Para colocar el botón en la esquina */
+    bottom: 20px; /* Ajusta la posición desde la parte inferior */
+    left: 20px; /* Ajusta la posición desde la izquierda */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Añade transiciones */
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+}
+
+/* Efecto de escala al hacer clic */
+.btn__volver:active {
+    transform: scale(0.95); /* Reduce el tamaño del botón al 95% */
+}
+
+/* Efecto de cambio de color al pasar el mouse */
+.btn__volver:hover {
+    background-color: #56595c; /* Color más oscuro de celeste al pasar el mouse */
+    color: white; /* Color del texto se mantiene blanco */
+}
+
+
+
+.olvido-contrasena {
+    text-align: center; /* Centra el texto */
+    margin-top: 30px; /* Aumenta el espacio arriba (ajusta según sea necesario) */
+}
+
+
+#olvido-password {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+
+

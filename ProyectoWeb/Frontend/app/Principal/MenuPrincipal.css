@@ -1,7 +1,7 @@
 body{
     margin: 0;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background: linear-gradient(to bottom, #03045e, #20b3d8); /* Degradado de fondo */
+    background:black; 
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -16,13 +16,22 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: linear-gradient(to bottom, #03045e, #20b3d8); 
+    background:black; 
 }
 
-
+.opciones {
+    font-family: 'Helvetica', sans-serif; /* Tipo de letra fino */
+    color: #20B2AA; /* Color más bonito (Aqua o turquesa) */
+    font-size: 22px; /* Tamaño de fuente ajustado */
+    text-decoration: none;
+    display: block;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    margin-bottom: 30px; /* Separación vertical entre las palabras */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 .menu-lateral div {
-    background: transparent;
+    background: black;
     padding: 10px;
     color: #000;
     font-weight: bold;
@@ -37,5 +46,13 @@ main {
     flex: 1; /* Permite que el main ocupe todo el espacio restante */
     margin-top: 60px; /* Ajusta este valor según la altura del header para evitar que se superponga */
     display: flex;
-    background: linear-gradient(to bottom, #03045e, #20b3d8); /* Degradado del main */
+    background:black ;
+}
+aside {
+    flex: 1; /* Permite que ocupe el espacio restante */
+    margin-left: 250px; /* Deja espacio para el menú lateral */
+    margin-top: 60px; /* Deja espacio para el header */
+    padding: 20px; /* Espacio interno opcional */
+    background-color: transparent; /* Color de fondo transparente */
+    height: calc(100vh - 60px); /* Ajusta la altura para ocupar el resto de la pantalla */
 }
